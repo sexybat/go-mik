@@ -7,9 +7,19 @@
 
 package id.co.next_innovation.go_mik.data.network;
 
+import io.reactivex.Observable;
+
 public interface ApiHelper {
 
     ApiHeader getApiHeader();
 
-    
+    Observable<ComicResponse> fetchAllComics();
+
+    Observable<ComicResponse> fetchComicsByCategory(int category_id);
+
+    Observable<CategoryResponse> fetchCategories();
+
+    Observable<EpisodeResponse> fetchAllEpisodes();
+
+    Observable<EpisodeResponse> fetchEpisodes(int comic_id);
 }

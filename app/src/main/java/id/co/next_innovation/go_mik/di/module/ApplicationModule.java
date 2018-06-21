@@ -14,6 +14,7 @@ import id.co.next_innovation.go_mik.data.AppDataManager;
 import id.co.next_innovation.go_mik.data.DataManager;
 import id.co.next_innovation.go_mik.data.db.AppDbHelper;
 import id.co.next_innovation.go_mik.data.db.DbHelper;
+import id.co.next_innovation.go_mik.data.network.Api;
 import id.co.next_innovation.go_mik.data.network.ApiHeader;
 import id.co.next_innovation.go_mik.data.network.ApiHelper;
 import id.co.next_innovation.go_mik.data.network.AppApiHelper;
@@ -94,6 +95,12 @@ public class ApplicationModule {
     @Singleton
     ApiHelper provideApiHelper(AppApiHelper appApiHelper) {
         return appApiHelper;
+    }
+
+    @Provides
+    @Singleton
+    Api provideApi() {
+        return new Api();
     }
 
     @Provides

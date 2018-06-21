@@ -7,7 +7,11 @@
 
 package id.co.next_innovation.go_mik.ui.home;
 
+import id.co.next_innovation.go_mik.data.db.entity.Category;
 import id.co.next_innovation.go_mik.ui.base.MvpView;
 
 public interface HomeView extends MvpView {
+
+    void addTab(Category category);
+    void setOffScreenPageLimit(int i);
 }

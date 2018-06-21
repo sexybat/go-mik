@@ -38,6 +38,10 @@ android {
             path "CMakeLists.txt"
         }
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
@@ -105,6 +109,7 @@ dependencies {
     implementation "com.hanks:htextview-base:0.1.6"
     implementation "com.hanks:htextview-fade:0.1.6"
     implementation 'com.ogaclejapan.smarttablayout:library:1.6.1@aar'
+    implementation 'com.astuetz:pagerslidingtabstrip:1.0.1'
 }
 
 configurations.all {

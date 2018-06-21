@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Go-MiK</string>
-    <string name="app_splash">The Easiest Way To Read Comics</string>
+    <string name="app_splash">THE EASIEST WAY TO READ COMICS</string>
     <!--play store-->
     <string name="app_google_play_store_link">"https://play.google.com/store/apps/details?id="</string>
     <string name="app_market_link">"market://details?id="</string>

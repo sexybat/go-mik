@@ -10,4 +10,6 @@ package id.co.next_innovation.go_mik.ui.home;
 import id.co.next_innovation.go_mik.ui.base.MvpPresenter;
 
 public interface HomeMvpPresenter<V extends HomeView> extends MvpPresenter<V> {
+
+    void loadCategory();
 }
